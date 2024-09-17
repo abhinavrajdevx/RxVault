@@ -3,7 +3,7 @@ import { SafeAreaView, Text, View } from "react-native";
 import Icon from "react-native-vector-icons/AntDesign";
 import TopNavBar from "@/components/TopNavBar";
 import TrialScroll from "@/components/TrialScroll";
-import { Link, router } from "expo-router";
+import { router } from "expo-router";
 
 const items = [
   {
@@ -45,7 +45,7 @@ export default function App() {
 
   return (
     <SafeAreaView className="flex-1 bg-[#0c0c0e]">
-      {/* <View className="mx-6 my-9">
+      <View className="mx-6 my-9">
         <View className="mb-[40px] flex flex-row justify-between items-center">
           <Icon name="home" size={25} color="#fbf9fc" />
           <Text className="text-[#fdfdfd] font-psemibold tracking-wider text-center text-2xl">
@@ -60,7 +60,7 @@ export default function App() {
           focused={focused}
           items={items}
         />
-      </View> */}
+      </View>
     </SafeAreaView>
   );
 }
